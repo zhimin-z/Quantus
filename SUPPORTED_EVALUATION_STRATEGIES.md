@@ -22,7 +22,7 @@ The classification follows the strict criterion that a strategy is "supported" o
 **Supported Strategies:**
 
 - ✅ **Strategy 1: Git Clone** - Quantus can be installed from source by cloning the Git repository.
-- ✅ **Strategy 2: PyPI Packages** - Quantus is available on PyPI and can be installed via `pip install quantus` or `pip install "quantus[full]"` for the complete installation with all optional dependencies (PyTorch, TensorFlow, Captum, tf-explain, Zennit).
+- ✅ **Strategy 2: PyPI Packages** - Quantus is available on PyPI and can be installed via `pip install quantus` or `pip install "quantus[full]"` for the complete installation with all optional dependencies (PyTorch, TensorFlow, Captum, tf-explain, Zennit, Transformers).
 
 **Unsupported Strategies:**
 
@@ -77,7 +77,7 @@ The classification follows the strict criterion that a strategy is "supported" o
 
 **Supported Strategies:**
 
-- ✅ **Strategy 1: Ground Truth Preparation** - Quantus supports pre-loading ground truth reference materials for evaluation:
+- ✅ **Strategy 1: Ground Truth Preparation** - Quantus accepts and processes ground truth reference materials for evaluation:
   - Segmentation masks for localization metrics
   - Model attribution saliency maps (explanations)
   - Reference explanations for comparison
@@ -171,7 +171,7 @@ Quantus is a specialized evaluation harness focused on **quantitative evaluation
 3. **Deterministic measurement** of explanation properties across six categories (Faithfulness, Robustness, Localization, Complexity, Randomisation, Axiomatic)
 4. **Ground truth-based evaluation** using pre-computed reference materials
 
-**Total Supported Strategies: 8 out of 38 (with 1 partially supported)**
+**Total Supported Strategies: 8 fully supported, 1 partially supported (9 total out of 38)**
 
 ### By Phase:
 - **Phase 0 (Provisioning):** 3/8 strategies supported
