@@ -2,6 +2,19 @@
 
 This document identifies which strategies from the **Unified Evaluation Workflow** are natively supported by Quantus in its full installation. A strategy is considered "supported" only if Quantus provides it out-of-the-box once fully installed, without requiring custom module implementation or external library integration beyond what's included in the full installation.
 
+## Methodology
+
+This analysis was conducted by:
+1. Reviewing the official Quantus documentation (README, installation guides, getting started guides)
+2. Examining the source code in the `quantus` package
+3. Analyzing the `pyproject.toml` to understand the full installation scope (`pip install "quantus[full]"`)
+4. Verifying capabilities against the package's stated purpose: "A metrics toolkit to evaluate neural network explanations"
+
+The classification follows the strict criterion that a strategy is "supported" only if it's available through the standard full installation without requiring:
+- Custom user implementation of core functionality
+- Integration with external monitoring tools not included in the installation
+- Additional libraries beyond those in the `[full]` installation option
+
 ## Phase 0: Provisioning (The Runtime)
 
 ### Step A: Harness Installation
